@@ -3,11 +3,11 @@ a simple Todo for learning purpose to teach CRUD operation in depth with django 
 
 1. install dependency with your package manaer tool
 - pipenv install requirements.txt
-or 
+### or 
 - pip install requirements.txt
 2. active your virtualenv
 3. run migratins command
-- python manage.py makemigrations
-- python manage.py migrate
+- ```python manage.py makemigrations```
+- ```python manage.py migrate```
 4. fire up server
-- python manage.py runserver
+- ```python manage.py runserver```
