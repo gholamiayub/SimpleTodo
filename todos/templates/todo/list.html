@@ -1,0 +1,14 @@
+{% block content %}
+    <button><a href="{% url "create" %}">Create Todo</a></button>
+    {% for todo in todos %}
+        <ul>
+            <li>
+                <p>
+                    {{ todo.name }}
+                    <a href="{% url "delete" todo.id %}">Delete</a> |
+                    <a href="{% url "update" todo.id %}">Update</a>
+                </p>
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
